@@ -1,20 +1,42 @@
-# CloudflarePages-MkDocs
+# Welcome to AII (Asset Information Insights) User Guidance Documentation
 
-<https://github.com/fu-sen/CloudflarePages-MkDocs>
+## Purpose
+The purpose of this documentation is to provide information needed to administer and use AII (Asset Information Insights) solution to capture and check design data produced as part of NEOM's THE LINE Project Delivery.
 
-**MkDocs with Cloudflare Pages (minimal configuration)**
+This documentation is intended for the use of THE LINE Design Managers and Digital Operations who will be managing and operating this solution. The documentation also serves broader stakeholders to orientate themselves with AII.
 
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-- [MkDocs](https://www.mkdocs.org/)
+## Scope
+This documentation covers the use of AII solution to perform **validation** and **compliance** on received design data (as datasheets) from Design Consultants against Design Data Requirements. This is broken down as the following below.
 
-## How to use
+- Asset & Space Requirements
+- Asset & Space Information
 
-1. Edit `mkdocs.yml` and `docs/index.md`, add more files if needed.
-2. Add the pip package to `requirements.txt` . (Themes and plugins)
-3. Commit to a GitHub project: `git push`
-4. Create a project from Cloudflare Pages and select your GitHub project.
-5. Enter the following items and select **Create Static Site**:
-    - **Project name**: Any name
-    - **Production branch**: `main`, `master`, etc.
-    - **Framework preset**: `Mkdocs`
-6. Wait a moment. `Success: Your site was deployed!` is displayed and the deployment is complete.
+### Excluded from Scope
+Asset & Space Design from Sources other than NEOM THE LINE Design Consultants.
+
+## Definitions
+For a comprehensive list of terms and abbreviations used at NEOM, please see the *List of Definitions and Abbreviations (NEOM-NEN-SCH-006)*.
+
+## Terms
+| Term | Definition |
+| ----------- | ----------- |
+| Asset Data Sheet Template | Excel template provided to fill in Asset Requirements & Instances. |
+| Space Data Sheet | Excel template provided to fill in Space Requirements & Instances. |
+| Asset Data Sheet | Excel datasheet with authored Asset Information to be submitted to NEOM. |
+| Space Data Sheet | Excel datasheet with authored Space Information to be submitted to NEOM. |
+| Compliance Check | A process of checking Design Consultant submitted Asset & Space Data Sheets for *compliance* against the relevant Asset Requirements. |
+| Validation Check | A process of checking and validating Design Consultant submitted Asset/Space Data Sheet for data quality assurance. |
+| Transmittal | A formal digital package of documents (such as BIM Models or Data Sheets) that are sent to other project stakeholders using the ACC platform for review and approval. Transmittal is the ACC specific technical process of submission. |
+| Submission | Formal document(s) sent for Review & Approval by NEOM |
+
+## Abbreviations
+| Abbreviation | Definition |
+| ----------- | ----------- |
+| Asset Data Sheet Template | Excel template provided to fill in Asset Requirements & Asset Instances. |
+| Space Data Sheet | Excel template provided to fill in Space Requirements & Space Instances. |
+
+## References
+## NEOM Documents
+| Document No. | Document Title |
+| ----------- | ----------- |
+| 15-000000-NTL-DGD-PRO-000004 | Exchange Information Requirements (EIR) for Common Asset Design Consultants (CADC) |
