@@ -13,3 +13,5 @@ nav:
   - About: about.md
 extra_css:
   - stylesheets/neom.css
+markdown_extensions:
+  - attr_list
