@@ -1,6 +1,16 @@
 site_name: AII Guidance
-theme: 
+theme:
   name: material
+  palette:
+    - scheme: default      # light mode
+      primary: custom
+      accent: custom
+    - scheme: slate        # dark mode
+      primary: custom
+      accent: custom
+
+extra_css:
+  - styles/neom.css
 nav:
   - Home: index.md
   - About: about.md
