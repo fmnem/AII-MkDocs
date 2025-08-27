@@ -13,7 +13,7 @@
    ========================= */
 :root {
   --neom-charcoal:    #1E1F23; /* Dark charcoal */
-  --neom-gold:        #B89635; /* Gold accent */
+  --neom-gold:        #ffc000; /* Gold accent */
   --neom-gold-dark:   #8f702a; /* Darker gold for borders/shadows */
   --neom-silver:      #C8C8C8; /* Neutral divider */
 }
@@ -29,7 +29,7 @@
 
   /* Accent (links, switches, chips, focus rings) */
   --md-accent-fg-color:             var(--neom-gold);
-  --md-accent-fg-color--transparent:#b896351a; /* ~10% */
+  --md-accent-fg-color--transparent:#ffc0001a; /* ~10% */
 
   /* Surfaces & text */
   --md-default-bg-color:            #ffffff;
@@ -101,7 +101,7 @@
   --md-primary-fg-color--dark:      var(--neom-gold-dark);
 
   --md-accent-fg-color:             var(--neom-gold);
-  --md-accent-fg-color--transparent:#b896351a;
+  --md-accent-fg-color--transparent:#ffc0001a;
 
   --md-typeset-a-color:             var(--neom-gold);
 
@@ -194,7 +194,7 @@ hr, .md-divider {
   background: #fffaf0;                  /* very subtle gold wash */
 }
 [data-md-color-scheme="default"] .md-typeset table:not([class]) tbody tr:hover {
-  background: #b8963514;                /* ~8% gold */
+  background: #ffc00014;                /* ~8% gold */
 }
 
 /* Caption */
@@ -226,7 +226,7 @@ hr, .md-divider {
   background: #1b1d22;
 }
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
-  background: #b8963526; /* ~15% gold, reads well on dark */
+  background: #ffc00026; /* ~15% gold, reads well on dark */
 }
 
 /* Links inside tables remain branded */
