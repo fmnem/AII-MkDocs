@@ -12,9 +12,10 @@
    NEOM brand color tokens
    ========================= */
 :root {
-  --neom-charcoal: #1E1F23; /* Dark charcoal */
-  --neom-gold:     #B89635; /* Gold accent */
-  --neom-silver:   #C8C8C8; /* Neutral divider */
+  --neom-charcoal:    #1E1F23; /* Dark charcoal */
+  --neom-gold:        #B89635; /* Gold accent */
+  --neom-gold-dark:   #8f702a; /* Darker gold for borders/shadows */
+  --neom-silver:      #C8C8C8; /* Neutral divider */
 }
 
 /* ======================================================
@@ -97,7 +98,7 @@
   /* Make gold the prominent brand accent in dark mode */
   --md-primary-fg-color:            var(--neom-gold);
   --md-primary-fg-color--light:     #d0ad57;
-  --md-primary-fg-color--dark:      #8f702a;
+  --md-primary-fg-color--dark:      var(--neom-gold-dark);
 
   --md-accent-fg-color:             var(--neom-gold);
   --md-accent-fg-color--transparent:#b896351a;
@@ -169,13 +170,23 @@ hr, .md-divider {
   border-bottom: 1px solid var(--neom-silver);
 }
 
-/* Header styling – light scheme */
+/* ===== BOLDER HEADER ===== */
+/* Header styling – light scheme (bold gold with white text) */
 [data-md-color-scheme="default"] .md-typeset table:not([class]) thead th {
   position: sticky; top: 0; z-index: 1;
-  background: #fff7e3;                 /* pale gold tint */
-  color: var(--neom-charcoal);
+  background: var(--neom-gold);       /* bold gold */
+  color: #ffffff;                     /* white text for contrast */
   font-weight: 700;
-  border-bottom: 2px solid var(--neom-gold);
+  border-bottom: 2px solid var(--neom-gold-dark);
+}
+
+/* Header styling – dark scheme (bold gold with charcoal text) */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) thead th {
+  position: sticky; top: 0; z-index: 1;
+  background: var(--neom-gold);       /* bold gold */
+  color: var(--neom-charcoal);        /* high contrast on gold */
+  font-weight: 700;
+  border-bottom: 2px solid var(--neom-gold-dark);
 }
 
 /* Body zebra striping + hover – light scheme */
@@ -201,7 +212,7 @@ hr, .md-divider {
   white-space: nowrap;
 }
 
-/* Dark scheme adjustments for tables */
+/* Dark scheme adjustments for table container & rows */
 [data-md-color-scheme="slate"] .md-typeset__table {
   background: #181a1f;
   border-color: #2c2e33;
@@ -211,11 +222,6 @@ hr, .md-divider {
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
   border-bottom-color: #2c2e33;
 }
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) thead th {
-  background: #20232a;
-  color: #eef0f2;
-  border-bottom-color: var(--neom-gold);
-}
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
   background: #1b1d22;
 }
@@ -224,30 +230,4 @@ hr, .md-divider {
 }
 
 /* Links inside tables remain branded */
-.md-typeset table a {
-  color: var(--md-typeset-a-color);
-  text-decoration: underline;
-}
-
-/* Rounded corners without double borders on the top row */
-.md-typeset table:not([class]) thead th:first-child { border-top-left-radius: 8px; }
-.md-typeset table:not([class]) thead th:last-child  { border-top-right-radius: 8px; }
-
-/* ===== Optional: Compact variant (apply per table) =====
-   Usage in Markdown (requires attr_list in mkdocs.yml):
-   {: .table--compact}
-*/
-.md-typeset table.table--compact th,
-.md-typeset table.table--compact td {
-  padding: .45rem .6rem;
-  font-size: .92em;
-}
-
-/* ===== Optional: Bordered rows variant =====
-   Apply in Markdown:
-   {: .table--rows}
-*/
-.md-typeset table.table--rows td {
-  border-left: 0;
-  border-right: 0;
-}
+.md
