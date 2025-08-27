@@ -8,9 +8,8 @@ theme:
     - scheme: slate        # dark mode
       primary: custom
       accent: custom
-
-extra_css:
-  - styles/neom.css
 nav:
   - Home: index.md
   - About: about.md
+extra_css:
+  - stylesheets/neom.css
