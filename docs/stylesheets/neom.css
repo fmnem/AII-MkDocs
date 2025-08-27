@@ -1,22 +1,36 @@
-/* ===== NEOM color tokens ===== */
+/*! NEOM theme for Material for MkDocs
+ *  File: docs/styles/neom.css
+ *  Purpose: Apply NEOM color system and component styling to MkDocs Material
+ *  Notes:
+ *    - Pair with mkdocs.yml palette entries using `primary: custom` / `accent: custom`.
+ *    - Requires: theme.name = material
+ *    - Optional: markdown_extensions: [attr_list] for per-table variants
+ *  Last updated: 2025-08-27
+ */
+
+/* =========================
+   NEOM brand color tokens
+   ========================= */
 :root {
-  --neom-charcoal: #1E1F23; /* dark charcoal */
-  --neom-gold:     #B89635; /* gold accent */
-  --neom-silver:   #C8C8C8; /* neutral / divider */
+  --neom-charcoal: #1E1F23; /* Dark charcoal */
+  --neom-gold:     #B89635; /* Gold accent */
+  --neom-silver:   #C8C8C8; /* Neutral divider */
 }
 
-/* ===== Light scheme (Material: "default") ===== */
+/* ======================================================
+   LIGHT scheme (Material calls this "default")
+   ====================================================== */
 [data-md-color-scheme="default"] {
-  /* Primary (top bar, sidebar title, active tabs) */
+  /* Primary (top bar, active tabs, page title accents) */
   --md-primary-fg-color:            var(--neom-charcoal);
   --md-primary-fg-color--light:     #2a2c32;
   --md-primary-fg-color--dark:      #141519;
 
-  /* Accent (links, FABs, switches, chips, active elements) */
+  /* Accent (links, switches, chips, focus rings) */
   --md-accent-fg-color:             var(--neom-gold);
-  --md-accent-fg-color--transparent: #b896351a; /* 10% */
+  --md-accent-fg-color--transparent:#b896351a; /* ~10% */
 
-  /* Surface + text */
+  /* Surfaces & text */
   --md-default-bg-color:            #ffffff;
   --md-default-fg-color:            var(--neom-charcoal);
 
@@ -37,6 +51,9 @@
   /* Tables & dividers */
   --md-typeset-table-color:         var(--neom-silver);
   --md-typeset-table-color--light:  #e9e9e9;
+
+  /* Selection highlight */
+  --md-accent-bg-color:             #fff7e3; /* pale gold wash */
 }
 
 /* Subtle link hover for accessibility */
@@ -57,21 +74,23 @@
   filter: brightness(0.95);
 }
 
-/* Admonitions (notes, tips) – frame them with NEOM gold */
+/* Admonitions / details (notes, tips) */
 .md-typeset .admonition,
 .md-typeset details {
   border-color: var(--neom-gold);
 }
 .md-typeset .admonition > .admonition-title,
 .md-typeset details > summary {
-  background-color: #fff7e3;            /* soft gold tint */
+  background-color: #fff7e3; /* soft gold tint */
   border-color: var(--neom-gold);
   color: var(--neom-charcoal);
 }
 
-/* ===== Dark scheme (Material: "slate") ===== */
+/* ================================================
+   DARK scheme (Material calls this "slate")
+   ================================================ */
 [data-md-color-scheme="slate"] {
-  /* Surfaces */
+  /* Surfaces and body text */
   --md-default-bg-color:            var(--neom-charcoal);
   --md-default-fg-color:            #e6e6e6;
 
@@ -81,7 +100,7 @@
   --md-primary-fg-color--dark:      #8f702a;
 
   --md-accent-fg-color:             var(--neom-gold);
-  --md-accent-fg-color--transparent: #b896351a;
+  --md-accent-fg-color--transparent:#b896351a;
 
   --md-typeset-a-color:             var(--neom-gold);
 
@@ -97,7 +116,7 @@
   --md-typeset-table-color--light:  #3a3d43;
 }
 
-/* Buttons in dark */
+/* Dark: buttons */
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary {
   background-color: var(--neom-gold);
   color: #1a1a1a;
@@ -110,12 +129,125 @@
   filter: brightness(1.05);
 }
 
-/* Optional: thin dividers using Silver */
+/* ===========================
+   Global fine-tuning
+   =========================== */
 hr, .md-divider {
   border-color: var(--neom-silver);
 }
 
-/* Optional: small header/logo refinements */
+/* Keep the NEOM logo tidy in the header if used */
 .md-header__button.md-logo img {
-  height: 1.6rem; /* keeps the NEOM logomark tidy */
+  height: 1.6rem;
+}
+
+/* ===============================
+   NEOM Tables (Material for MkDocs)
+   =============================== */
+
+/* Frame standard tables (Material wraps with .md-typeset__table) */
+.md-typeset__table {
+  border: 1px solid var(--neom-silver);
+  border-radius: 10px;
+  overflow: auto; /* keeps rounded corners while enabling horizontal scroll */
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  background: #fff;
+}
+
+/* Base table layout */
+.md-typeset table:not([class]) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Cell paddings & dividers */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: .75rem .9rem;
+  border-bottom: 1px solid var(--neom-silver);
+}
+
+/* Header styling – light scheme */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) thead th {
+  position: sticky; top: 0; z-index: 1;
+  background: #fff7e3;                 /* pale gold tint */
+  color: var(--neom-charcoal);
+  font-weight: 700;
+  border-bottom: 2px solid var(--neom-gold);
+}
+
+/* Body zebra striping + hover – light scheme */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: #fffaf0;                  /* very subtle gold wash */
+}
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tbody tr:hover {
+  background: #b8963514;                /* ~8% gold */
+}
+
+/* Caption */
+.md-typeset table:not([class]) caption {
+  caption-side: bottom;
+  padding: .5rem .25rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Tighten numeric columns a touch */
+.md-typeset table:not([class]) th[align="right"],
+.md-typeset table:not([class]) td[align="right"] {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Dark scheme adjustments for tables */
+[data-md-color-scheme="slate"] .md-typeset__table {
+  background: #181a1f;
+  border-color: #2c2e33;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th,
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: #2c2e33;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) thead th {
+  background: #20232a;
+  color: #eef0f2;
+  border-bottom-color: var(--neom-gold);
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: #1b1d22;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: #b8963526; /* ~15% gold, reads well on dark */
+}
+
+/* Links inside tables remain branded */
+.md-typeset table a {
+  color: var(--md-typeset-a-color);
+  text-decoration: underline;
+}
+
+/* Rounded corners without double borders on the top row */
+.md-typeset table:not([class]) thead th:first-child { border-top-left-radius: 8px; }
+.md-typeset table:not([class]) thead th:last-child  { border-top-right-radius: 8px; }
+
+/* ===== Optional: Compact variant (apply per table) =====
+   Usage in Markdown (requires attr_list in mkdocs.yml):
+   {: .table--compact}
+*/
+.md-typeset table.table--compact th,
+.md-typeset table.table--compact td {
+  padding: .45rem .6rem;
+  font-size: .92em;
+}
+
+/* ===== Optional: Bordered rows variant =====
+   Apply in Markdown:
+   {: .table--rows}
+*/
+.md-typeset table.table--rows td {
+  border-left: 0;
+  border-right: 0;
 }
