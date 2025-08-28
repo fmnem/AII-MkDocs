@@ -19,7 +19,6 @@ For a comprehensive list of terms and abbreviations used at NEOM, please see the
 | ----------- | ----------- |
 | Asset Data Sheet Template | Excel template provided to fill in Asset Requirements & Asset Instances. |
 | Space Data Sheet | Excel template provided to fill in Space Requirements & Space Instances. |
-{: .table--colhover}
 
 ## References
 ### NEOM Documents
