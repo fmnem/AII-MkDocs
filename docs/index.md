@@ -13,3 +13,5 @@ This documentation covers the use of AII solution to perform **validation** and 
 
 ### Excluded from Scope
 Asset & Space Design from Sources other than NEOM THE LINE Design Consultants.
+
+--8<-- "includes/abbr.md"
