@@ -18,6 +18,8 @@ theme:
       scheme: default
     - media: "prefers-color-scheme: dark)"
       scheme: slate
+  # Documentation & Theme
+  custom_dir: 'theme'
 nav:
   - Home: index.md
   - Terms & Sources: terms.md
@@ -47,5 +49,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       clickable_checkbox: true
       custom_checkbox: true
+      
   
   
