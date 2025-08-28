@@ -27,3 +27,22 @@ markdown_extensions:
   - attr_list
   - abbr
   - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: true
+  
+  
