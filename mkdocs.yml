@@ -21,6 +21,7 @@ theme:
 nav:
   - Home: index.md
   - Terms & Sources: terms.md
+  - Process Walkthrough: processwalkthrough.md
 extra_css:
   - stylesheets/neom.css
 markdown_extensions:
