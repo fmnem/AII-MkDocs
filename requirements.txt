@@ -5,3 +5,4 @@ mkdocs-minify-plugin
 mkdocs-material
 mkdocs-git-revision-date-localized-plugin
 pymdown-extensions
+lightgallery
