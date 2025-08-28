@@ -27,6 +27,7 @@ extra_css:
 markdown_extensions:
   - attr_list
   - abbr
+  - lightgallery
   - pymdownx.snippets
   - admonition
   - pymdownx.details
