@@ -18,18 +18,33 @@ theme:
       scheme: default
     - media: "prefers-color-scheme: dark)"
       scheme: slate
-    # Documentation & Theme
-    custom_dir: 'theme'
 nav:
   - Home: index.md
   - Terms & Sources: terms.md
   - Process Walkthrough: processwalkthrough.md
 extra_css:
   - stylesheets/neom.css
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 markdown_extensions:
   - attr_list
   - abbr
-  - lightgallery
   - pymdownx.snippets
   - admonition
   - pymdownx.details
