@@ -1,5 +1,5 @@
 /*! NEOM theme for Material for MkDocs
- *  File: docs/styles/neom.css
+ *  File: docs/stylesheets/neom.css
  *  Purpose: Apply NEOM color system and component styling to MkDocs Material
  *  Notes:
  *    - Pair with mkdocs.yml palette entries using `primary: custom` / `accent: custom`.
@@ -231,3 +231,10 @@ hr, .md-divider {
 
 /* Links inside tables remain branded */
 .md
+
+
+/* Smooth theme switching transitions */
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
