@@ -12,7 +12,7 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 
 ## Overview Process
 
-![!Requirements & Information Datasheets Process Overview](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png?raw=true)
+![!Requirements & Information Datasheets Process Overview](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png?raw=true){ data-title="Fig. 1 - Requirements & Information Datasheets Process Overview" data-description="Fig1_Caption"}
 /// caption
 Fig. 1 - Requirements & Information Datasheets Process Overview
 ///
@@ -26,7 +26,7 @@ Fig. 1 - Requirements & Information Datasheets Process Overview
 ## Detailed Process
 ### Creation & Submission of Requirements and Information Datasheets
 
-![!Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCreation.png?raw=true)
+![!Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCreation.png?raw=true){ data-title="Fig. 2 - Creation & Submission of Requirements & Information Datasheets" data-description="Fig2_Caption"}
 /// caption
 Fig. 2 - Creation & Submission of Requirements & Information Datasheets
 ///
@@ -44,7 +44,7 @@ The following table below breaks down each process step of the _Creation & Submi
 
 ### Validation of Requirements and Information Datasheets
 
-![!Validation of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessValidation.png?raw=true)
+![!Validation of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessValidation.png?raw=true){ data-title="Fig.3 - Validation of Requirements and Information Datasheets" data-description="Fig3_Caption"}
 /// caption
 Fig.3 - Validation of Requirements and Information Datasheets
 ///
@@ -62,7 +62,7 @@ The following table below breaks down each process step of the _Validation of Re
 
 ### Compliance of Requirements and Information Datasheets
 
-![!Compliance of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCompliance.png?raw=true)
+![!Compliance of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCompliance.png?raw=true){ data-title="Fig. 4 - Compliance of Requirements and Information Datasheets" data-description="Fig4_Caption"}
 /// caption
 Fig. 4 - Compliance of Requirements and Information Datasheets
 ///
