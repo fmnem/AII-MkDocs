@@ -18,8 +18,6 @@ theme:
       scheme: default
     - media: "prefers-color-scheme: dark)"
       scheme: slate
-  # Documentation & Theme
-  custom_dir: 'theme'
 nav:
   - Home: index.md
   - Terms & Sources: terms.md
@@ -29,7 +27,7 @@ extra_css:
 markdown_extensions:
   - attr_list
   - abbr
-  - lightgallery
+  - mkdocs-glightbox
   - pymdownx.snippets
   - admonition
   - pymdownx.details
