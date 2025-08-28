@@ -12,7 +12,7 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 
 ## Overview Process
 
-![Creation & Submission of Requirements & Information Datasheets](assets/AIIProcessOverview.png)
+![Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png)
 
 !!! note
 
@@ -26,7 +26,7 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 ## Detailed Process
 ### Creation & Submission of Requirements and Information Datasheets
 
-![Creation & Submission of Requirements & Information Datasheets](assets/AIIProcessCreation.png)
+![Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCreation.png)
 
 The following table below breaks down each process step of the _Creation & Submission of Requirements and Information Datasheets_ expected by the **Design Consultant** to perform. 
 
@@ -41,7 +41,7 @@ The following table below breaks down each process step of the _Creation & Submi
 
 ### Validation of Requirements and Information Datasheets
 
-![Validation of Requirements and Information Datasheets](assets/AIIProcessValidation.png)
+![Validation of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessValidation.png)
 
 The following table below breaks down each process step of the _Validation of Requirements and Information Datasheets_ expected by the **Package BIM Lead** to perform. 
 
@@ -56,7 +56,7 @@ The following table below breaks down each process step of the _Validation of Re
 
 ### Compliance of Requirements and Information Datasheets
 
-![Compliance of Requirements and Information Datasheets](assets/AIIProcessCompliance.png)
+![Compliance of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCompliance.png)
 
 The following table below breaks down each process step of the _Compliance of Requirements and Information Datasheets_ expected by the **Design Manager** to perform.
 
