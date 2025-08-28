@@ -24,10 +24,11 @@ nav:
   - Process Walkthrough: processwalkthrough.md
 extra_css:
   - stylesheets/neom.css
+plugins:
+  - mkdocs-glightbox
 markdown_extensions:
   - attr_list
   - abbr
-  - mkdocs-glightbox
   - pymdownx.snippets
   - admonition
   - pymdownx.details
