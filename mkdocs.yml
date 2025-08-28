@@ -44,6 +44,7 @@ plugins:
       manual: false
 markdown_extensions:
   - attr_list
+  - meta
   - abbr
   - pymdownx.snippets
   - admonition
