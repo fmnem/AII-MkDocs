@@ -14,14 +14,11 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 
 ![Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png?raw=true)
 
-!!! note
-
-    === "AII Core Audiences & Processes"
-
-        1. Consultant - Create / Update Asset & Space Requirements
-        2. Consultant - Create / Update Asset & Space Information
-        3. BIM Manager - Validate Submitted Asset & Space Requirements and Information
-        4. Design Manager - Check Compliance of Submitted Asset & Space Information against their corresponding Requirements.
+???+ note "AII Core Audiences & Processes"
+    1. Consultant - Create / Update Asset & Space Requirements
+    2. Consultant - Create / Update Asset & Space Information
+    3. BIM Manager - Validate Submitted Asset & Space Requirements and Information
+    4. Design Manager - Check Compliance of Submitted Asset & Space Information against their corresponding Requirements.
 
 ## Detailed Process
 ### Creation & Submission of Requirements and Information Datasheets
