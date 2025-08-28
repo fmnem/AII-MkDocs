@@ -18,17 +18,18 @@ theme:
       scheme: default
     - media: "prefers-color-scheme: dark)"
       scheme: slate
+    # Documentation & Theme
+    custom_dir: 'theme'
 nav:
   - Home: index.md
   - Terms & Sources: terms.md
   - Process Walkthrough: processwalkthrough.md
 extra_css:
   - stylesheets/neom.css
-plugins:
-  - mkdocs-glightbox
 markdown_extensions:
   - attr_list
   - abbr
+  - lightgallery
   - pymdownx.snippets
   - admonition
   - pymdownx.details
