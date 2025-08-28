@@ -26,3 +26,5 @@ For a comprehensive list of terms and abbreviations used at NEOM, please see the
 | Document No. | Document Title |
 | ----------- | ----------- |
 | 15-000000-NTL-DGD-PRO-000004 | Exchange Information Requirements (EIR) for Common Asset Design Consultants (CADC) |
+
+--8<-- "includes/abbreviations.md"
