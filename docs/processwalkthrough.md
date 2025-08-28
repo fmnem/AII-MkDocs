@@ -12,7 +12,10 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 
 ## Overview Process
 
-![Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png?raw=true)
+![!Requirements & Information Datasheets Process Overview](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessOverview.png?raw=true)
+/// caption
+Fig. 1 - Requirements & Information Datasheets Process Overview
+///
 
 ???+ note "AII Core Audiences & Processes"
     1. Consultant - Create / Update Asset & Space Requirements
@@ -23,7 +26,10 @@ AII will extract data from both BIM Models & Data Sheets submitted by the Design
 ## Detailed Process
 ### Creation & Submission of Requirements and Information Datasheets
 
-![Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCreation.png?raw=true)
+![!Creation & Submission of Requirements & Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCreation.png?raw=true)
+/// caption
+Fig. 2 - Creation & Submission of Requirements & Information Datasheets
+///
 
 The following table below breaks down each process step of the _Creation & Submission of Requirements and Information Datasheets_ expected by the **Design Consultant** to perform. 
 
@@ -38,7 +44,10 @@ The following table below breaks down each process step of the _Creation & Submi
 
 ### Validation of Requirements and Information Datasheets
 
-![Validation of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessValidation.png?raw=true)
+![!Validation of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessValidation.png?raw=true)
+/// caption
+Fig.3 - Validation of Requirements and Information Datasheets
+///
 
 The following table below breaks down each process step of the _Validation of Requirements and Information Datasheets_ expected by the **Package BIM Lead** to perform. 
 
@@ -53,7 +62,10 @@ The following table below breaks down each process step of the _Validation of Re
 
 ### Compliance of Requirements and Information Datasheets
 
-![Compliance of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCompliance.png?raw=true)
+![!Compliance of Requirements and Information Datasheets](https://github.com/fmnem/AII-MkDocs/blob/main/assets/AIIProcessCompliance.png?raw=true)
+/// caption
+Fig. 4 - Compliance of Requirements and Information Datasheets
+///
 
 The following table below breaks down each process step of the _Compliance of Requirements and Information Datasheets_ expected by the **Design Manager** to perform.
 
